@@ -34,6 +34,7 @@ List<Board> list = boardDao.selectBoardListPerPage(beginRow, pagePerRow);
 				<th>클릭수</th>
 				<th>그림</th>
 				<th>이미지파일</th>
+				<th>수정일</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -53,6 +54,7 @@ href="<%=request.getContextPath()%>/board/boardView.jsp?boardNo=<%=b.getBoardNo(
 				<td><%=b.getBoardHit()%></td>
 				<td><%=b.getBoardImg()%></td>
 				<td><%=b.getBoardfileName()%></td>
+				<td><%=b.getBoardmodifDate()%></td>
 			</tr>
 <%
 	}
